@@ -1247,7 +1247,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
@@ -1359,21 +1359,32 @@ HEADER STYLES
 *********************/
 .header
 {
-  background-color: #2B3D73;
+
+  background-color: #2C3E72;
   background-image: linear-gradient(to right, #415181, #027C96);
 }
 
 #logo
 {
-  background-image: url("../images/logos/nhs-wales.png");
+  margin: 0;
+  height: 6.5rem;
+  line-height: 5.5rem;
+
+  background-image: url("../images/logos/nhs-wales_white.png");
   background-repeat: no-repeat;
-  margin: 0.75em 0;
+  background-size: auto 5rem;
+  background-position: left 2rem top 0.5rem;
+
+  border-bottom: 1px solid rgb(189, 214, 234);
 }
 
 #logo a
 {
+  margin-left: 13rem;
+  margin-right: 2rem;
+
+  font-size: 2rem;
   color: white;
-  margin-left: 10rem;
 }
 
 /*********************
