@@ -1357,13 +1357,24 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-.header {
-  background-color: #323944; }
+.header
+{
+  background-color: #2B3D73;
+  background-image: linear-gradient(to right, #415181, #027C96);
+}
 
-#logo {
-  margin: 0.75em 0; }
-  #logo a {
-    color: white; }
+#logo
+{
+  background-image: url("../images/logos/nhs-wales.png");
+  background-repeat: no-repeat;
+  margin: 0.75em 0;
+}
+
+#logo a
+{
+  color: white;
+  margin-left: 10rem;
+}
 
 /*********************
 NAVIGATION STYLES
