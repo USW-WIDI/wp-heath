@@ -1366,24 +1366,24 @@ HEADER STYLES
 
 #logo
 {
-  margin: 0;
-  height: 6.5rem;
-  line-height: 5.5rem;
+  margin: 0 !important;
+  height: 6rem;
+  line-height: 5.25rem;
 
   background-image: url("../images/logos/nhs-wales_white.png");
   background-repeat: no-repeat;
   background-size: auto 5rem;
-  background-position: left 2rem top 0.5rem;
+  background-position: left 3rem top 0.5rem;
 
   border-bottom: 1px solid rgb(189, 214, 234);
 }
 
 #logo a
 {
-  margin-left: 13rem;
-  margin-right: 2rem;
+  margin-left: 14rem;
+  margin-right: 3rem;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -1430,15 +1430,20 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-#content {
-  margin-top: 1.5em; }
+#content
+{
+  margin-top: 0;
+}
 
-.hentry {
+.hentry
+{
   background-color: white;
-  border-radius: 3px;
   margin-bottom: 1.5em;
-  border: 1px solid #cccccc; }
-  .hentry header {
+  border: 1px solid #cccccc;
+  border-top: 0 !important;
+}
+
+.hentry header{
     border-bottom: 1px solid #f8f9fa;
     padding: 1.5em; }
   .hentry footer {
@@ -1463,10 +1468,12 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-.byline {
+.byline
+{
   color: #9fa6b4;
   font-style: italic;
-  margin: 0; }
+  margin: 0;
+}
 
 /* entry content */
 .entry-content {
@@ -1886,6 +1893,8 @@ you can add resource intensive styles.
   *********************/
   .nav {
     border: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -1906,8 +1915,8 @@ you can add resource intensive styles.
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: white;
-          text-decoration: underline; }
+          background-color: white;
+          color: #2B3D73; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
