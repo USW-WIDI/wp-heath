@@ -1401,6 +1401,11 @@ HEADER STYLES
   color: #1E81A0;
 }
 
+.header .searchform #s::placeholder, .header .searchform #s:-ms-input-placeholder, .header .searchform #s::-ms-input-placeholder 
+{
+  color: rgba(30, 96, 160, 0.5);
+}
+
 .header .searchform button
 {
   float: left;
