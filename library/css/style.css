@@ -1359,29 +1359,75 @@ HEADER STYLES
 *********************/
 .header
 {
-
   background-color: #2C3E72;
   background-image: linear-gradient(to right, #415181, #027C96);
 }
 
 #logo
 {
-  margin: 0 !important;
+  margin: 0 auto;
   height: 6rem;
   line-height: 5.25rem;
+  width: 75%;
+  float: left;
 
   background-image: url("../images/logos/nhs-wales_white.png");
   background-repeat: no-repeat;
   background-size: auto 5rem;
-  background-position: left 3rem top 0.5rem;
+  background-position: left 0rem top 0.5rem;
+}
 
-  border-bottom: 1px solid rgb(189, 214, 234);
+.header .searchform
+{
+  width: 25%;
+  float: right;
+  margin-top: 1.75rem;
+}
+
+.header .searchform #s
+{
+  float: left;
+
+  height: calc(2.5rem - 4px);
+  line-height: calc(2.5rem - 4px);
+  width: calc(100% - 3rem - 28px);
+
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+
+  border: 2px solid rgb(189, 214, 234);
+  border-radius: 4px;
+
+  color: #1E81A0;
+}
+
+.header .searchform button
+{
+  float: left;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  background-image: url('../images/search.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  background-size: 1rem;
+
+  border: 2px solid rgb(189, 214, 234);
+  border-radius: 4px;
+}
+
+.header hr
+{
+  width: 100%;
+  margin: 0;
+  border: 1px solid rgb(189, 214, 234);
 }
 
 #logo a
 {
-  margin-left: 14rem;
-  margin-right: 3rem;
+  margin-left: 12rem;
 
   font-size: 1.5rem;
   color: white;
@@ -1399,7 +1445,7 @@ and more scalable.
 */
 .nav {
   border-bottom: 0;
-  margin: 0;
+  margin: 0 auto;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -1893,8 +1939,6 @@ you can add resource intensive styles.
   *********************/
   .nav {
     border: 0;
-    padding-left: 3rem;
-    padding-right: 3rem;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -1956,7 +2000,8 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em; }
+    margin-top: 2.2em; 
+  display: none !important;}
 
   .widgettitle {
     border-bottom: 2px solid #444;
